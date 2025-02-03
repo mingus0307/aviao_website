@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Zentriert den gesamten Inhalt */
+    align-items: center; /* Vertikale Zentrierung */
+    font-family: 'Barlow', sans-serif;
+    flex-direction: column;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;  /* Navbar nach rechts ausrichten */
+    width: auto; /* Breite wird an den Inhalt angepasst */
+    height: 70px;
+    background-color: black;
+    z-index: 1000;
+    margin-right: 93px; 
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 30px 0 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Listenelemente nach rechts ausrichten */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: color 0.5s ease;
+}
+
+.navbar ul li a:hover {
+    color: #c71717;
+}
+
+
+
+/* Kontaktformular */
+.contact-form-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Leichte Transparenz für das Formular */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.contact-form-container h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    background-color: #333; /* Dunkelgrau für die Eingabefelder */
+    color: white;
+    border: 1px solid #444;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #c71717; /* Rote Submit-Schaltfläche */
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff4d4d; /* Helleres Rot bei Hover */
+}
+
+/* Spam-Schutz */
+.g-recaptcha {
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-button {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: color 0.5s ease;
+}
+
+.footer-button:hover {
+    color: #c71717;
+}
+
