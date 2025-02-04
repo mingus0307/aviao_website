@@ -83,3 +83,14 @@ footer {
 .footer-button:hover {
     color: #c71717; /* Hintergrundfarbe beim Hover */
 }
+
+.vids{
+    padding-top: 100px;
+    font-family: 'Barlow', serif;  
+    text-align: center;  
+}
+
+.vids h1{
+    text-align: left;
+    margin-left: 480px;  
+}
