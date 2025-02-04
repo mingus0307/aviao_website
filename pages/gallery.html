@@ -13,14 +13,19 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="../index.html">home</a></li>
-            <li><a href="gallery.html">gigs</a></li>
-            <li><a href="music.html">music</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <ul id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <ul class="desktop-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
 
     <div class="pic-container">
         <img src="../assests/img/band_comp.jpg" alt="Bandfoto" class="bandpic">

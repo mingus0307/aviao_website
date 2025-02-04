@@ -170,3 +170,52 @@ footer {
 .footer-button:hover {
     color: #c71717; /* Hintergrundfarbe beim Hover */
 }
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .pic-container {
+        padding-top: 60px; /* Weniger Padding für kleine Bildschirme */
+        height: auto;
+    }
+
+    .bandpic {
+        width: 100%; /* Volle Breite */
+        max-height: 60vh; /* Höchstens 60% der Bildschirmhöhe */
+    }
+
+    .content {
+        padding: 20px;
+        font-size: 16px; /* Kleinere Schrift */
+    }
+
+    .content p {
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .gigs {
+        max-width: 100%;
+    }
+
+    .gig {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px; /* Weniger Abstand */
+    }
+
+    .footer-buttons {
+        flex-wrap: wrap; /* Falls Buttons nicht in eine Zeile passen */
+        gap: 5px;
+    }
+
+
