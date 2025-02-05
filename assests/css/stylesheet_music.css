@@ -5,14 +5,26 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Arvenier';
+    src: url('../fonts/avenir-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
-    background-color: #bb0043; 
+    background-color: #A9A1EC; 
     margin: 0; 
     padding: 0;  
     overflow-x: hidden;
     height: 100%; 
        justify-content: center; 
     align-items: center;  
+}
+
+h1 {
+    font-family: 'Arvenier', serif; 
+    color: white; 
 }
 
 /* Navigation */
@@ -48,8 +60,9 @@ body, html {
 }
 
 .navbar ul li a:hover {
-    color: #c71717; 
+    color: #A9A1EC; 
 }
+
 
 footer {
     background-color: rgba(0, 0, 0, 0.8);
@@ -81,7 +94,7 @@ footer {
 }
 
 .footer-button:hover {
-    color: #c71717; /* Hintergrundfarbe beim Hover */
+    color: #A9A1EC; /* Hintergrundfarbe beim Hover */
 }
 
 .vids{

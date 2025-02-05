@@ -5,24 +5,29 @@
     font-style: normal;
 }
 
-/* Hintergrund der Scrollleiste */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Helles Grau */
+@font-face {
+    font-family: 'Arvenier';
+    src: url('../fonts/avenir-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-* {
-    scrollbar-color: #333 #f1f1f1; /* Balkenfarbe, Hintergrundfarbe */
+@font-face {
+    font-family: 'Source Sans';
+    src: url('../fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 body, html {
-    background-color: #bb0043; 
+    background-color: #A9A1EC; 
     margin: 0; 
     padding: 0;  
     overflow-x: hidden;
     height: 100%; 
-       justify-content: center; 
-    align-items: center;  
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* Navigation */
@@ -57,21 +62,20 @@ body, html {
     transition: color 0.5s ease;
 }
 
-.navbar ul li a:hover {
-    color: #c71717; 
+.navbar ul li a:hover { 
+    color: #A9A1EC ; 
 }
 
 .pic-container {
     width: 100%;
-    height: 100vh;  /* Höhe des Viewports */
+    height: 80vh; 
     display: flex;
     justify-content: center;  /* Horizontale Zentrierung */
-    align-items: flex-start;  /* Vertikale Ausrichtung, mit Beibehaltung des top Padding */
-    padding-top: 80px;  /* Behalte das Padding oben */
+    align-items: flex-start;  /* Vertikale Ausrichtung, */
 }
 
 .bandpic {
-    width: 80%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 
@@ -81,10 +85,11 @@ body, html {
 .content {
 
     padding: 80px;
-    font-family: 'Barlow', serif;
-    color: black;
+    font-family: 'Source Sans', sans;
+    color: white;
     text-align: left;
     font-size: 20px;
+    margin-top: 50px;
     
 }
 
@@ -93,10 +98,11 @@ body, html {
 }
 
 .gigs {
-    font-family: 'Barlow', serif;
+    font-family: 'Arvenier', serif;
     text-align: center;
     max-width: 80%;
     margin: 0 auto;
+    color: white; 
 }
 
 /* Gigs als eine Zeile mit mehr Abstand */
@@ -111,11 +117,14 @@ body, html {
 
 /* Trennlinien kürzer & anpassbar */
 .gigs hr {
+    font-family: 'Arvenier', serif;
     width: 95%;
     border: none;
     border-top: 1px solid #2b2325; /* Farbe ändern */
     margin: 15px auto;
 }
+
+
 .fete {
     position: relative;
     left: 10px; 
@@ -134,10 +143,31 @@ body, html {
 .line {
     width: 100%;
     border: none;
-    border-top: 2px solid #2b2325; /* Farbe ändern */
+    border-top: 2px solid white;  /* Farbe ändern */
     margin: 15px auto;
 
 }
+
+.gig-line{
+    border: none;
+    border-top: 1px solid white; 
+    color: white; 
+    background-color: white;  
+}
+
+.merch {
+    background-color: rgba(13, 13, 13);
+    min-height: 100vh;
+    text-align: center;  
+}
+
+.merch h1 {
+    font-family: 'Arvenier', serif; 
+    color: #EEDDBA;
+    font-size: 60px;
+    padding-top: 60px;   
+}
+
 footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -168,10 +198,10 @@ footer {
 }
 
 .footer-button:hover {
-    color: #c71717; /* Hintergrundfarbe beim Hover */
+    color: #A9A1EC; /* Hintergrundfarbe beim Hover */
 }
 
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
         margin: 0;
@@ -213,9 +243,13 @@ footer {
         gap: 10px; /* Weniger Abstand */
     }
 
+
+
     .footer-buttons {
         flex-wrap: wrap; /* Falls Buttons nicht in eine Zeile passen */
         gap: 5px;
     }
+
+
 
 

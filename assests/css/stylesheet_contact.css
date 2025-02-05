@@ -18,6 +18,9 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    color: #A9A1EC; 
+}
 .navbar {
     position: fixed;
     top: 0;
@@ -50,7 +53,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #c71717;
+    color: #A9A1EC;
 }
 
 
@@ -63,11 +66,12 @@ body {
     width: 80%;
     max-width: 500px;
     text-align: center;
+    color: #A9A1EC;
 }
 
 .contact-form-container h1 {
     font-size: 2rem;
-    color: white;
+    color: #A9A1EC;
     margin-bottom: 20px;
 }
 
@@ -89,6 +93,7 @@ input[type="submit"] {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding-top: 30px; 
 }
 
 input[type="submit"]:hover {
@@ -97,7 +102,7 @@ input[type="submit"]:hover {
 
 /* Spam-Schutz */
 .g-recaptcha {
-    margin: 20px 0;
+    margin: 20px 0!
 }
 
 /* Footer */
@@ -131,6 +136,6 @@ footer {
 }
 
 .footer-button:hover {
-    color: #c71717;
+    color: #A9A1EC;
 }
 

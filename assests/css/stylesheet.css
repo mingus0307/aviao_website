@@ -55,7 +55,7 @@ html, body {
 }
 
 .navbar ul li a:hover {
-    color: #c71717; 
+    color: #A9A1EC; 
 }
 
 .container {
@@ -99,7 +99,7 @@ footer {
 }
 
 .footer-button:hover {
-    color: #c71717; /* Hintergrundfarbe beim Hover */
+    color: #A9A1EC; /* Hintergrundfarbe beim Hover */
 }
 
 
