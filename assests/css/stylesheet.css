@@ -185,8 +185,8 @@ footer {
 
     .navbar ul li {
         opacity: 0; /* Versteckt die Links zuerst */
-        margin: 10px 0;
         transition: opacity 0.5s ease;
+        margin-right: 30px; 
     }
 
     .navbar ul.active li {
