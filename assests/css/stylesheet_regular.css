@@ -115,6 +115,10 @@ body, html {
     gap: 80px; /* Mehr Abstand zwischen Datum, Event & Ort */
 }
 
+.gigs h1{
+    font-size: 50px; 
+}
+
 /* Trennlinien kürzer & anpassbar */
 .gigs hr {
     font-family: 'Arvenier', serif;
