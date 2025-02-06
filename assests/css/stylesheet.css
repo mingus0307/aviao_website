@@ -17,6 +17,7 @@ html, body {
     background-size: cover; /* Passt sich an */
     background-position: center center; /* Zentriert das Bild */
     background-repeat: no-repeat; /* Verhindert Wiederholung */
+    background-color: black; 
 }
 
 /* Navigation bleibt oben */
