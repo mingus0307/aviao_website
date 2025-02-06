@@ -4,6 +4,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Arvenier';
+    src: url('../fonts/avenir-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: #000;
     color: white;
@@ -67,6 +75,9 @@ h1 {
     max-width: 500px;
     text-align: center;
     color: #A9A1EC;
+    font-family: 'Arvenier', serif;
+    display: flex;
+    flex-direction: column;   
 }
 
 .contact-form-container h1 {
@@ -99,7 +110,37 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #ff4d4d; /* Helleres Rot bei Hover */
 }
+label[for="message"] {
+    margin-right: 400px;  
+}
 
+label[for="email"] {
+    margin-right: 427px;  
+}
+label[for="name"] {
+    margin-right: 427px;  
+}
+
+.submit {
+    background-color: #A9A1EC; /* Grüner Hintergrund */
+    color: white; /* Weißer Text */
+    border: none; /* Kein Rand */
+    padding: 12px 24px; /* Innenabstand */
+    font-size: 16px; /* Textgröße */
+    font-family: 'Arvenier', serif; /* Schriftart */
+    border-radius: 8px; /* Abgerundete Ecken */
+    cursor: pointer; /* Zeigt den Zeiger-Cursor an */
+    transition: background-color 0.3s, transform 0.2s; /* Sanfte Übergänge für Farbe und Effekt */
+}
+
+.submit:hover {
+    background-color: #45a049; /* Dunkleres Grün beim Hover */
+    transform: scale(1.1); /* Button leicht vergrößern */
+}
+
+.submit:active {
+    background-color: #3e8e41; /* Noch dunkleres Grün bei Klick */
+}
 /* Spam-Schutz */
 .g-recaptcha {
     margin: 20px 0!
