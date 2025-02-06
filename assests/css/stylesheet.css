@@ -37,7 +37,8 @@ html, body {
     padding: 30px 0 0 0;
     margin: 0 auto; 
     display: flex;
-    justify-content: center; /* Zentriert die Nav-Elemente */
+    justify-content: right; /* Zentriert die Nav-Elemente */
+    padding-right: 93px; 
 }
 
 .navbar ul li {
