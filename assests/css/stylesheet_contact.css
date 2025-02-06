@@ -24,6 +24,7 @@ body {
     align-items: center; /* Vertikale Zentrierung */
     font-family: 'Barlow', sans-serif;
     flex-direction: column;
+    overflow: scroll; 
 }
 
 h1 {
@@ -122,7 +123,7 @@ label[for="name"] {
 }
 
 .submit {
-    background-color: #A9A1EC; /* Grüner Hintergrund */
+    background-color: #A9A1EC;
     color: white; /* Weißer Text */
     border: none; /* Kein Rand */
     padding: 12px 24px; /* Innenabstand */
@@ -134,16 +135,18 @@ label[for="name"] {
 }
 
 .submit:hover {
-    background-color: #45a049; /* Dunkleres Grün beim Hover */
+    background-color: #EEDDBA; /* Dunkleres Grün beim Hover */
     transform: scale(1.1); /* Button leicht vergrößern */
+    color: #A9A1EC; 
 }
 
 .submit:active {
-    background-color: #3e8e41; /* Noch dunkleres Grün bei Klick */
+    background-color: white; /* Noch dunkleres Grün bei Klick */
 }
 /* Spam-Schutz */
 .g-recaptcha {
     margin: 20px 0!
+    flex-grow: 1; 
 }
 
 /* Footer */
@@ -157,6 +160,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
+     
 }
 
 .footer-buttons {
