@@ -321,7 +321,11 @@ footer {
         text-align: center;
         gap: 10px; /* Weniger Abstand */
     }
-
+    
+    .merchbooth {
+        max-width: 100%; 
+        height: auot; 
+    }
 
 
     .footer-buttons {
