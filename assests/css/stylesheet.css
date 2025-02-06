@@ -175,6 +175,10 @@ footer {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Weicher Schatten */
     }
 
+    .navbar ul li a:hover { 
+        color: #EEDDBA ; 
+    }
+
     .navbar ul.active {
         visibility: visible; 
         opacity: 1; 
