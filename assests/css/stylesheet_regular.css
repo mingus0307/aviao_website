@@ -247,6 +247,9 @@ footer {
         transition: all 0.3s ease;
     }
 
+    .navbar.menu-open{
+        background-color:  #A9A1EC;
+    }
 
     .navbar ul {
         visibility: hidden; 

@@ -263,6 +263,10 @@ footer {
         opacity: 1; /* Zeigt die Links, wenn das Menü aktiv ist */
     
     }
+
+    .navbar.menu-open{
+        background-color:  #A9A1EC;
+    }
     
 
 }
