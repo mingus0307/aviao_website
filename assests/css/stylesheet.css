@@ -10,11 +10,12 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Verhindert horizontales Scrollen */
-    min-height: 100vh; 
+    min-height: 100vh;
+    background-image: url("../img/background.png");  
     background-size: cover; /* Passt sich an */
-    background-position: center center; /* Zentriert das Bild */
+    background-position: top; /* Zentriert das Bild */
     background-repeat: no-repeat; /* Verhindert Wiederholung */
-    background-color: black; /**/ 
+    background-color: black; /**/
 }
 
 /* Navigation bleibt oben */
@@ -69,8 +70,12 @@ html, body {
 
 .container img {
     width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    height: 100%;
+    display: none; 
+}
+
+.token {
+    height: 100vh; 
 }
 
 /* Footer unten positionieren */
@@ -129,23 +134,18 @@ footer {
     
     body {
         overflow: auto;
-        background-color: black;  
+        background-color: black; 
+        background-image: none;  
         height: 100%; 
     }
 
 
-    .image-container {
-        position: absolute;
-        top: 60px;
-        bottom: 60px;
-        width: 100%;
-        height: auto; /* Damit das Bild gescrollt werden kann */
-        overflow-y: auto;
-    }
 
-    .image-container img {
-        width: 100%;
-        height: auto;
+
+    .container img {
+        display: flex; 
+        object-fit: cover; 
+
     }
   .menu-toggle {
     display: flex;
@@ -226,6 +226,10 @@ footer {
     .navbar ul.active li {
         opacity: 1; /* Zeigt die Links, wenn das Menü aktiv ist */
     
+    }
+
+    .token{
+        display: none; 
     }
     
 
