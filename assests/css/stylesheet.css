@@ -133,7 +133,6 @@ footer {
 @media screen and (max-width: 768px) {
     
     body {
-        overflow: auto;
         background-color: black; 
         background-image: none;  
         height: 100%; 
@@ -143,10 +142,19 @@ footer {
 
 
     .container img {
-        display: flex; 
-        object-fit: cover; 
+        display: block;  /* Sicherstellen, dass es sichtbar ist */
+        width: auto;     /* Bild behält seine originale Breite */
+        height: 100%;    /* Höhe automatisch anpassen */
+        max-width: none; /* Verhindert, dass es auf 100% limitiert wird */
+        position: center; 
+    }
+
+    .container {
+        overflow-x: none; /* Erlaubt horizontales Scrollen */
 
     }
+
+
   .menu-toggle {
     display: flex;
     flex-direction: column; 
