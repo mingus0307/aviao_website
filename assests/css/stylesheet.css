@@ -146,13 +146,16 @@ footer {
         width: auto;     /* Bild behält seine originale Breite */
         height: 100%;    /* Höhe automatisch anpassen */
         max-width: none; /* Verhindert, dass es auf 100% limitiert wird */
-        position: center; 
+        margin-right: 50px; 
     }
 
     .container {
-        overflow-x: none; /* Erlaubt horizontales Scrollen */
-
+        position: center;
+       justify-content: center;
+        align-items: center;   
     }
+
+
 
 
   .menu-toggle {
