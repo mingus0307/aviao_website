@@ -96,10 +96,11 @@ input, textarea {
     border-radius: 5px;
     margin-bottom: 15px;
     font-size: 1rem;
+    overflow-y: scroll; 
 }
 
 textarea::placeholder{
-    color: #aaa; 
+    color: #aaa;
 }
 
 input[type="submit"] {
