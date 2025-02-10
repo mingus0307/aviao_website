@@ -145,9 +145,11 @@ label[for="name"] {
 }
 /* Spam-Schutz */
 .g-recaptcha {
-    margin: 20px 0!
-    flex-grow: 1;
-    margin-top: 20px;  
+        margin-top: 15px; /* Abstand nach oben */
+    display: flex;
+    justify-content: center;
+}
+
 }
 
 /* Footer */
