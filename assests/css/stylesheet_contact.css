@@ -98,6 +98,10 @@ input, textarea {
     font-size: 1rem;
 }
 
+textarea::placeholder{
+    color: #aaa; 
+}
+
 input[type="submit"] {
     background-color: #c71717; /* Rote Submit-Schaltfläche */
     border: none;
@@ -120,6 +124,9 @@ label[for="email"] {
 }
 label[for="name"] {
     margin-right: 427px;  
+}
+label[for="size"] {
+    margin-right: 800px; 
 }
 
 .submit {

@@ -177,6 +177,16 @@ body, html {
     object-position: -5px -30px;
 }
 
+.merch-button img {
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.merch-button img:hover {
+    transform: scale(1.05); /* Leicht vergrößern beim Hover */
+}
+
 footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
