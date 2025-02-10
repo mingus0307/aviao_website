@@ -213,6 +213,7 @@ footer {
         transform: translateY(-100%); /* Start außerhalb des Viewports */
         transition: transform 1s ease-in-out; /* Gleiten von oben */
 
+
     }
 
 
